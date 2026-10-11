@@ -1,0 +1,18 @@
+{
+  "name": "pi-mode-guard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "chat / plan / act modes for Pi with a read-only shell guard and a footer chip",
+  "keywords": ["pi-package", "modes", "read-only"],
+  "pi": {
+    "extensions": ["./extensions/*.ts"]
+  },
+  "scripts": {
+    "test": "node test/load.test.mjs"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "@earendil-works/pi-ai": "*"
+  }
+}
